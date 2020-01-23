@@ -24,6 +24,8 @@ limitations under the License.
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "tensorflow/lite/version.h"
 
+#include "tensorflow/lite/micro/examples/hello_world/tinyml_model_data.h"
+
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
 tflite::ErrorReporter* error_reporter = nullptr;
@@ -36,7 +38,7 @@ float running_total = 0.0;
 
 // Create an area of memory to use for input, output, and intermediate arrays.
 // Finding the minimum value for your model may require some trial and error.
-constexpr int kTensorArenaSize = 2 * 1024;
+constexpr int kTensorArenaSize = 255 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 }  // namespace
 
@@ -50,7 +52,7 @@ void setup() {
 
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
-  model = tflite::GetModel(g_sine_model_data);
+  model = tflite::GetModel(vww_mobilenet_v1_025_30_frozen);
   if (model->version() != TFLITE_SCHEMA_VERSION) {
     error_reporter->Report(
         "Model provided is schema version %d not equal "
@@ -104,7 +106,7 @@ void loop() {
 
   // Output the results. A custom HandleOutput function can be implemented
   // for each supported hardware target.
-  inference_count += (int) y_val;
+  running_total += y_val;
   // HandleOutput(error_reporter, x_val, y_val);
 
   // Increment the inference_counter, and reset it if we have reached
