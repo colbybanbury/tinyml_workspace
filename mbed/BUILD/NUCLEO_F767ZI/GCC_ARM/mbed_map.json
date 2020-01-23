@@ -1,0 +1,142 @@
+[
+    {
+        "module": "[fill]", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 32, 
+            ".bss": 13, 
+            ".data": 11, 
+            ".bss-delta": -4, 
+            ".text": 190
+        }
+    }, 
+    {
+        "module": "[lib]/c.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 89, 
+            ".data": 2472, 
+            ".bss-delta": 0, 
+            ".text": 32860
+        }
+    }, 
+    {
+        "module": "[lib]/gcc.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 2300
+        }
+    }, 
+    {
+        "module": "[lib]/m.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 1, 
+            ".bss-delta": 0, 
+            ".text": 3496
+        }
+    }, 
+    {
+        "module": "[lib]/misc", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 28, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 180
+        }
+    }, 
+    {
+        "module": "[lib]/nosys.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 32
+        }
+    }, 
+    {
+        "module": "[lib]/stdc++.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 16, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 40
+        }
+    }, 
+    {
+        "module": "mbed-os/drivers", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 1260
+        }
+    }, 
+    {
+        "module": "mbed-os/hal", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 66, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 1354
+        }
+    }, 
+    {
+        "module": "mbed-os/platform", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 180, 
+            ".data": 260, 
+            ".bss-delta": 0, 
+            ".text": 4374
+        }
+    }, 
+    {
+        "module": "mbed-os/targets", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 1108, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 8754
+        }
+    }, 
+    {
+        "module": "tensorflow/lite", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 32, 
+            ".bss": 8076, 
+            ".data": 4, 
+            ".bss-delta": 4, 
+            ".text": 74292
+        }
+    }, 
+    {
+        "summary": {
+            "static_ram": 12336, 
+            "total_flash_delta": 64, 
+            "static_ram_delta": 0, 
+            "total_flash": 131892
+        }
+    }
+]
