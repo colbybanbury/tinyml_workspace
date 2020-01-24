@@ -13,7 +13,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-#define TINYML_MODEL mobilenet_v1_004_96_frozen
+// #define TINYML_MODEL mobilenet_v1_004_96_frozen
+// YOU WILL NEED TO DEFINE THIS TINYML MODEL IN YOUR COMPILATION INSTRUCTIONS
+// USING -DTINYML_MODEL=<the model you want from tinyml_model_data.cc>
 
 #include "tensorflow/lite/micro/examples/hello_world/main_functions.h"
 

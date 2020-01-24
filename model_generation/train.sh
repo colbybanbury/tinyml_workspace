@@ -14,7 +14,12 @@ TF_SOURCE=$HOME/packages/tensorflow
 VWW_DATASET=$TF_SOURCE/models/research/slim/mscoco
 PREPROCESSING_NAME=mobilenet_v1
 # MODEL_NAME=mobilenet_v1_025
-MODEL_NAME=mobilenet_v1_0125
+# MODEL_NAME=mobilenet_v1_0125
+# To add mobilenet models with different width parameters, simply add them to the tensorflow
+# source at the location:
+#
+#   tensorflow/models/research/slim/nets/mobilenet_v1.py
+#   tensorflow/models/research/slim/nets/nets_factory.py
 TRAIN_IMAGE_SIZE=96  # default is 96
 
 cd $TF_SOURCE
@@ -22,7 +27,15 @@ chmod +x models/research/slim/datasets/download_mscoco.sh
 bash models/research/slim/datasets/download_mscoco.sh coco
 cd -
 
-
+for MODEL_NAME in mobilenet_v1_020 \
+mobilenet_v1_018 \
+mobilenet_v1_016 \
+mobilenet_v1_014 \
+mobilenet_v1_012 \
+mobilenet_v1_010 \
+mobilenet_v1_008 \
+mobilenet_v1_006 \
+mobilenet_v1_004 ; do
 for image_size in 30 48 60 96 ;
 do
 training_directory=vww_${MODEL_NAME}_${image_size}
@@ -44,6 +57,7 @@ python3 $TF_SOURCE/models/research/slim/train_image_classifier.py \
 --moving_average_decay=0.9999 \
 --batch_size=96 \
 --max_number_of_steps=3000
+done
 done
 
 

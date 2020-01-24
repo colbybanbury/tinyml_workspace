@@ -1,3 +1,6 @@
+# Dont' include all build files from the mbed project
 mbed/BUILD/*
+# Don't include all of the actual model files
+model_generation/models
 vww*
 *pb

@@ -16,6 +16,12 @@ limitations under the License.
 #include "tensorflow/lite/micro/examples/hello_world/main_functions.h"
 #include "mbed.h"
 
+// #define TINYML_MODEL mobilenet_v1_004_96_frozen
+// YOU WILL NEED TO DEFINE THIS TINYML MODEL IN YOUR COMPILATION INSTRUCTIONS
+// USING -DTINYML_MODEL=<the model you want from tinyml_model_data.cc>
+#define STRING(s) #s
+#define STRING_VAR(s) STRING(s)
+
 Timer t;
 
 // This is the default main used on systems that have the standard C entry
@@ -32,6 +38,6 @@ int main(int argc, char* argv[]) {
       loop();
     }
     t.stop();
-    debug("Inferences took %f seconds\n", t.read());
+    debug("<%s>,<%f>,seconds\n", STRING_VAR(TINYML_MODEL), t.read());
   }
 }

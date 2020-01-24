@@ -16,15 +16,21 @@ def get_most_recent_checkpoint(model_folder):
 # and each of the trained files is inside a folder already.
 # The folder should contain graph.pbtxt
 # and some form of model.ckpt-ITERATION NUMBER
-model_folders = [a for a in Path.cwd().glob("vww*")
+# Assuming all of the models in the models folder.
+model_base_folder = Path.cwd() / "models"
+model_folders = [a for a in model_base_folder.glob("*")
                  if a.is_dir()]
+print(f"Found {len(model_folders)} models to convert.")
 
 # Step 2: Export to frozen protobuf
-# Exports into frozen protobufs, with name as the original folder name
+# Exports into frozen protobufs, with name as the original folder nam
 # with _frozen.pb appended to it
-model_type = 'mobilenet_v1_0125'
+# We assume the model folder results will be in the format
+# <model_type>-<other_params>
+# which will allow us to scrape out the model type easily.
 for model_folder in model_folders:
     model_name = model_folder.stem
+    model_type = model_name.split('-')[0]
     frozen_protobuf_name = model_name + '_frozen.pb'
     if Path(frozen_protobuf_name).is_file():
         continue
