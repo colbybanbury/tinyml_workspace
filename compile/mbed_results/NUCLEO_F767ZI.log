@@ -997,3 +997,246 @@ Starting benchmark.<mobilenet_v1_008_96_frozen>,<0.737828>,seconds
 <mobilenet_v1_008_96_frozen>,<0.737802>,seconds
 <mobilenet_v1_008_96_frozen>,<0.737803>,seconds
 <mobilenet_v1_008_96_frozen>,<0.737815>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539782>,seconds
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539782>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539776>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539790>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539783>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539802>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539787>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539788>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539799>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_60_frozen>,<0.896490>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+Starting benchmark.<mobilenet_v1_010_60_frozen>,<0.896490>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896453>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896486>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896505>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896474>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896506>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896451>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896465>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088277>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088262>,seconds
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088277>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088262>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088208>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088249>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088280>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088259>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088244>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088256>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616043>,seconds
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616031>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616034>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616028>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616029>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616030>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088272>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088257>,seconds
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088272>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088257>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088202>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088230>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088235>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088261>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088270>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088222>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_48_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539805>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_48_fr[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737804>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737790>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737794>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737804>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_48_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737805>,seconds
+Starting benchmark.<mobilenet_v1_008_48_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737805>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737798>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737819>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737795>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896517>,seconds
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896517>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896467>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896461>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896461>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896462>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896478>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896466>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896473>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_96_frozen>,<1.088274>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088256>,seconds
+Starting benchmark.<mobilenet_v1_012_96_frozen>,<1.088274>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088256>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088247>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088267>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088237>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088293>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088243>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088210>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295383>,seconds
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295383>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295394>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295299>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295275>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295292>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295265>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295274>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737830>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737806>,seconds
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737830>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737806>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737808>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737791>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737798>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737813>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737816>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737807>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737814>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616045>,seconds
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616045>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616042>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616049>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616042>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616031>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616052>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616046>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616034>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295372>,seconds
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295372>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295366>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295244>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295282>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295315>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295294>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295305>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_60_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539788>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539796>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539786>,seconds
+Starting benchmark.<mobilenet_v1_004_60_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_60_
