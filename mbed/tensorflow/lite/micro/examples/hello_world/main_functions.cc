@@ -13,6 +13,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
+#define TINYML_MODEL mobilenet_v1_004_96_frozen
+
 #include "tensorflow/lite/micro/examples/hello_world/main_functions.h"
 
 #include "tensorflow/lite/micro/examples/hello_world/constants.h"
@@ -52,7 +54,7 @@ void setup() {
 
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
-  model = tflite::GetModel(vww_mobilenet_v1_0125_60_frozen);
+  model = tflite::GetModel(TINYML_MODEL);
   if (model->version() != TFLITE_SCHEMA_VERSION) {
     error_reporter->Report(
         "Model provided is schema version %d not equal "
