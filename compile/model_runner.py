@@ -5,6 +5,8 @@ from pathlib import Path
 import argparse
 import os
 import time
+import shutil as sh
+import random
 
 
 BINARY_FOLDER = Path.cwd() / 'mbed_models'
@@ -21,7 +23,6 @@ def get_attached_devices():
     return devices[0]
 
 
-
 def run_binary(binary_path, device, output_path, copy_time=10, bench_time=10):
     """Takes in a path to a binary and deploys it onto our MCU.
     Make sure that this binary actually corresponds to the device you are
@@ -30,15 +31,23 @@ def run_binary(binary_path, device, output_path, copy_time=10, bench_time=10):
     # wait a little bit of time for the model to flash
     command = f"cp {binary_path} {device}"
     print(command)
-    run(command, shell=True)
+    fail_counter = 0
+    while True:
+        try:
+            sh.copy(binary_path, device)
+            break
+        except OSError:
+            fail_counter += 1
+            if fail_counter > 5:
+                print("Failed 5 times, stopping... Maybe replug the MCU?")
+                exit(1)
     time.sleep(copy_time)
 
     # Actually reset the MCU, and read the output it generates. We timeout after
     # <bench_time> seconds since theoretically our MCU sould look forever.
     try:
         command = f"mbed sterm -r >> {output_path}"
-        print(command)
-        run(command, shell=True, check=True, timeout=bench_time)
+        run(['mbed', 'sterm', '--reset'], timeout=bench_time)
     except TimeoutExpired:
         pass
     except CalledProcessError:
@@ -48,7 +57,14 @@ def run_binary(binary_path, device, output_path, copy_time=10, bench_time=10):
 if __name__ == '__main__':
     device = get_attached_devices()
     binary_models = list((BINARY_FOLDER / TESTING_DEVICE).glob("*"))
-    print(f"Found {len(binary_models)} to benchmark.")
+    num_models = len(binary_models)
+    output_logs = OUTPUT_FOLDER / f"{TESTING_DEVICE}.log"
+    print(f"Found {num_models} to benchmark.")
     print(f"Using device {device} for benchmarking.")
 
-    
+    random.shuffle(binary_models)
+    for idx, binary_model in enumerate(binary_models):
+        print(f"[{idx}/{num_models}]")
+        run_binary(binary_model, device, output_logs)
+
+        

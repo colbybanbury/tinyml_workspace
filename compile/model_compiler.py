@@ -59,6 +59,7 @@ def compile_program(model_name):
     if not output_model_path.parent.is_dir():
         output_model_path.parent.mkdir(exist_ok=True, parents=True)
     print(f"mv {binary_path} {output_model_path}")
+    
     sh.move(binary_path, output_model_path)
 
 
