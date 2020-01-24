@@ -28,10 +28,10 @@ int main(int argc, char* argv[]) {
   while (true) {
     t.reset();
     t.start();
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 1; i++) {
       loop();
     }
     t.stop();
-    debug("10 inferences took %f seconds\n", t.read());
+    debug("Inferences took %f seconds\n", t.read());
   }
 }
