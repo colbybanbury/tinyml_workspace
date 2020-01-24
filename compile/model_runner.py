@@ -47,7 +47,8 @@ def run_binary(binary_path, device, output_path, copy_time=10, bench_time=10):
     # <bench_time> seconds since theoretically our MCU sould look forever.
     try:
         command = f"mbed sterm -r >> {output_path}"
-        run(['mbed', 'sterm', '--reset'], timeout=bench_time)
+        with output_path.open('a') as output_file:
+            run(['mbed', 'sterm', '--reset'], timeout=bench_time, stdout=output_file)
     except TimeoutExpired:
         pass
     except CalledProcessError:
