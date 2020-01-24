@@ -27,8 +27,7 @@ chmod +x models/research/slim/datasets/download_mscoco.sh
 bash models/research/slim/datasets/download_mscoco.sh coco
 cd -
 
-for MODEL_NAME in mobilenet_v1_020 \
-mobilenet_v1_018 \
+for MODEL_NAME in \
 mobilenet_v1_016 \
 mobilenet_v1_014 \
 mobilenet_v1_012 \
@@ -36,9 +35,7 @@ mobilenet_v1_010 \
 mobilenet_v1_008 \
 mobilenet_v1_006 \
 mobilenet_v1_004 ; do
-for image_size in 30 48 60 96 ;
-do
-training_directory=vww_${MODEL_NAME}_${image_size}
+training_directory=vww_${MODEL_NAME}
 # Train the model with different image sizes
 python3 $TF_SOURCE/models/research/slim/train_image_classifier.py \
 --train_dir=$training_directory \
@@ -47,7 +44,7 @@ python3 $TF_SOURCE/models/research/slim/train_image_classifier.py \
 --dataset_dir=$VWW_DATASET \
 --model_name=$MODEL_NAME \
 --preprocessing_name=$PREPROCESSING_NAME \
---train_image_size=$image_size \
+--train_image_size=$TRAIN_IMAGE_SIZE \
 --input_grayscale=True \
 --save_summaries_secs=300 \
 --learning_rate=0.045 \
@@ -57,7 +54,6 @@ python3 $TF_SOURCE/models/research/slim/train_image_classifier.py \
 --moving_average_decay=0.9999 \
 --batch_size=96 \
 --max_number_of_steps=3000
-done
 done
 
 
