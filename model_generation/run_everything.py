@@ -22,13 +22,14 @@ model_folders = [a for a in Path.cwd().glob("vww*")
 # Step 2: Export to frozen protobuf
 # Exports into frozen protobufs, with name as the original folder name
 # with _frozen.pb appended to it
+model_type = 'mobilenet_v1_0125'
 for model_folder in model_folders:
     model_name = model_folder.stem
     frozen_protobuf_name = model_name + '_frozen.pb'
     if Path(frozen_protobuf_name).is_file():
         continue
     checkpoint = model_folder / get_most_recent_checkpoint(model_folder)
-    command = f"./export.sh {model_name} {checkpoint}"
+    command = f"./export.sh {model_name} {checkpoint} {model_type}"
     print(command)
     call(command, shell=True)
 

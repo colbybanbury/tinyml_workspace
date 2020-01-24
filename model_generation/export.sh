@@ -12,12 +12,13 @@ PY=python3
 CWD=$(pwd)
 SAVE_FILE=$CWD/$1
 CHECKPOINT=$2
+MODEL_NAME=$3
 
 cd $TF_SOURCE
 $PY models/research/slim/export_inference_graph.py \
 --alsologtostderr \
 --dataset_name=visualwakewords \
---model_name=mobilenet_v1_025 \
+--model_name=$MODEL_NAME \
 --image_size=96 \
 --input_grayscale=True \
 --output_file=$SAVE_FILE.pb

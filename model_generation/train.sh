@@ -13,7 +13,8 @@
 TF_SOURCE=$HOME/packages/tensorflow
 VWW_DATASET=$TF_SOURCE/models/research/slim/mscoco
 PREPROCESSING_NAME=mobilenet_v1
-MODEL_NAME=mobilenet_v1_025
+# MODEL_NAME=mobilenet_v1_025
+MODEL_NAME=mobilenet_v1_0125
 TRAIN_IMAGE_SIZE=96  # default is 96
 
 cd $TF_SOURCE
