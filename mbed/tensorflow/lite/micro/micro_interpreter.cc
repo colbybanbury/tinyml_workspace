@@ -209,6 +209,73 @@ TfLiteStatus MicroInterpreter::Invoke() {
   return kTfLiteOk;
 }
 
+TfLiteStatus MicroInterpreter::InvokeDebug() {
+  if (initialization_status_ != kTfLiteOk) {
+    error_reporter_->Report("Invoke() called after initialization failed\n");
+    return kTfLiteError;
+  }
+
+  // Ensure tensors are allocated before the interpreter is invoked to avoid
+  // difficult to debug segfaults.
+  if (!tensors_allocated_) {
+    AllocateTensors();
+  }
+
+  // Init method is not yet implemented.
+  for (size_t i = 0; i < operators_->size(); ++i) {
+    auto* node = &(node_and_registrations_[i].node);
+    auto* registration = node_and_registrations_[i].registration;
+    size_t init_data_size;
+    const char* init_data;
+    if (registration->builtin_code == BuiltinOperator_CUSTOM) {
+      init_data = reinterpret_cast<const char*>(node->custom_initial_data);
+      init_data_size = node->custom_initial_data_size;
+    } else {
+      init_data = reinterpret_cast<const char*>(node->builtin_data);
+      init_data_size = 0;
+    }
+    if (!tensors_prepared_ && registration->init) {
+      node->user_data =
+          registration->init(&context_, init_data, init_data_size);
+    }
+  }
+
+  if (!tensors_prepared_) {
+    for (size_t i = 0; i < operators_->size(); ++i) {
+      auto* node = &(node_and_registrations_[i].node);
+      auto* registration = node_and_registrations_[i].registration;
+      if (registration->prepare) {
+        TfLiteStatus prepare_status = registration->prepare(&context_, node);
+        if (prepare_status != kTfLiteOk) {
+          error_reporter_->Report(
+              "Node %s (number %d) failed to prepare with status %d",
+              OpNameFromRegistration(registration), i, prepare_status);
+          return kTfLiteError;
+        }
+      }
+    }
+  }
+
+  for (size_t i = 0; i < operators_->size(); ++i) {
+    auto* node = &(node_and_registrations_[i].node);
+    auto* registration = node_and_registrations_[i].registration;
+
+    if (registration->invoke) {
+      std::cout << "Operation Fired" << std::endl;
+      TfLiteStatus invoke_status = registration->invoke(&context_, node);
+      if (invoke_status != kTfLiteOk) {
+        error_reporter_->Report(
+            "Node %s (number %d) failed to invoke with status %d",
+            OpNameFromRegistration(registration), i, invoke_status);
+        return kTfLiteError;
+      }
+      std::cout << "Operation Finished" << std::endl;
+    }
+  }
+  return kTfLiteOk;
+}
+
+
 TfLiteTensor* MicroInterpreter::input(size_t index) {
   const flatbuffers::Vector<int32_t>* inputs = subgraph_->inputs();
   const size_t length = inputs->size();

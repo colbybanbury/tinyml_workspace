@@ -44,6 +44,7 @@ class MicroInterpreter {
   TfLiteStatus AllocateTensors();
 
   TfLiteStatus Invoke();
+  TfLiteStatus InvokeDebug();
 
   size_t tensors_size() const { return context_.tensors_size; }
   TfLiteTensor* tensor(size_t tensor_index);
