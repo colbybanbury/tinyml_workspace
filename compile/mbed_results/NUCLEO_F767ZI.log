@@ -1,0 +1,1242 @@
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+tarting benchmark.<mobilenet_v1_010_60_frozen>,<0.896489>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896485>,seconds
+Starting benchmark.<mobilenet_v1_010_60_frozen>,<0.896489>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896485>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896490>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896473>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896477>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896484>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896469>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896497>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896486>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295385>,seconds
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295411>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295350>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295339>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295268>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295319>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295265>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295259>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737837>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737796>,seconds
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737837>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737820>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737804>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737815>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737815>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737816>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088263>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088274>,seconds
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088263>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088274>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088237>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088227>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088245>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088226>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088210>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088246>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_60_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616036>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616038>,seconds
+Starting benchmark.<mobilenet_v1_006_60_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616036>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616036>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616030>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616034>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_60_frozen>,<0.616041>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539779>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539794>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539779>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539794>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539785>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539782>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539783>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539781>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539780>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539784>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539796>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539797>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539795>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539784>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539791>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_96_frozen>,<0.896487>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896480>,seconds
+Starting benchmark.<mobilenet_v1_010_96_frozen>,<0.896487>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896480>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896469>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896500>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896476>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896470>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896465>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896483>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896470>,seconds
+<mobilenet_v1_010_96_frozen>,<0.896495>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896487>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896480>,seconds
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896487>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896480>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896468>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896500>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896475>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896483>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896469>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896482>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896478>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896461>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088268>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088229>,seconds
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088254>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088262>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088289>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088240>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088243>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088232>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088259>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088249>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737795>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737796>,seconds
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737795>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737777>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737808>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737789>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737785>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737792>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_30_frozen>,<1.295389>,seconds
+Starting benchmark.<mobilenet_v1_014_30_frozen>,<1.295389>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295319>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295265>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295292>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295293>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295271>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295299>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295378>,seconds
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295378>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295323>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295314>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295307>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295272>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295252>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295336>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616048>,seconds
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616048>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616047>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616042>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616046>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616047>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616036>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616034>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_96_frozen>,<0.737828>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737797>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737797>,seconds
+Starting benchmark.<mobilenet_v1_008_96_frozen>,<0.737828>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737797>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737797>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737775>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737818>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737807>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737802>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737808>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737819>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616048>,seconds
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616024>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616048>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616044>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616046>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616047>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616053>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616022>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616032>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616027>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+mobilenet_v1_006_30_frozen>,<0.616046>,seconds
+ [mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+                                                                                                                                                                                                                                    [mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=22) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=70) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=71) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=72) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=73) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=74) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=75) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=76) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=77) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=78) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Value: 0x8017D6C
+F[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F767ZI
+-- MbedOS Error Info --
+
+= System will be rebooted due to a fatal error =
+= Reboot count(=79) reached maximum, system will halt after rebooting  
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 0000000B
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x800122F
+Error Valu--- [QUIT] ---
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 00000001
+R1   : 00000000
+R2   : 00000001
+R3   : 08001DB1
+R4   : 00000000
+R5   : 00000000
+R6   : 00000000
+R7   : 00000000
+R8   : 00000000
+R9   : 00000000
+R10  : 20070000
+R11  : 00000000
+R12  : 00000000
+SP   : 20080000
+LR   : 0800027F
+PC   : 08017D6C
+xPSR : 21000000
+PSP  : 00000000
+MSP  : 2007FFE0
+CPUID: 411FC270
+HFSR : 40000000
+MMFSR: 00000000
+BFSR : 00000000
+UFSR : 00000001
+DFSR : 00000009
+AFSR : 00000000
+Mode : Thread
+Priv : Privileged
+StackStarting benchmark.<mobilenet_v1_010_30_frozen>,<0.896485>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896475>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896463>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896460>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896452>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896474>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896495>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896475>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896470>,seconds
+<mobilenet_v1_010_30_frozen>,<0.896479>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_96_frozen>,<1.295379>,seconds
+Starting benchmark.<mobilenet_v1_014_96_frozen>,<1.295379>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295414>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295274>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295289>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295246>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295243>,seconds
+<mobilenet_v1_014_96_frozen>,<1.295314>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_30_frozen>,<1.295383>,seconds
+Starting benchmark.<mobilenet_v1_014_30_frozen>,<1.295383>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295370>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295287>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295352>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295263>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295270>,seconds
+<mobilenet_v1_014_30_frozen>,<1.295266>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_96_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616043>,seconds
+Starting benchmark.<mobilenet_v1_006_96_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616031>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616029>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616048>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616041>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_96_frozen>,<0.616030>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_96_frozen>,<0.737828>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737824>,seconds
+Starting benchmark.<mobilenet_v1_008_96_frozen>,<0.737828>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737824>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737825>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737802>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737795>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737820>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737791>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737807>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737802>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_96_frozen>,<0.737815>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539782>,seconds
+Starting benchmark.<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539782>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539776>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539790>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539783>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539802>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539787>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539788>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539799>,seconds
+<mobilenet_v1_004_96_frozen>,<0.539786>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_60_frozen>,<0.896490>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+Starting benchmark.<mobilenet_v1_010_60_frozen>,<0.896490>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896453>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896486>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896505>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896474>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896506>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896451>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896507>,seconds
+<mobilenet_v1_010_60_frozen>,<0.896465>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088277>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088262>,seconds
+Starting benchmark.<mobilenet_v1_012_30_frozen>,<1.088277>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088262>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088208>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088249>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088280>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088259>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088244>,seconds
+<mobilenet_v1_012_30_frozen>,<1.088256>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616043>,seconds
+Starting benchmark.<mobilenet_v1_006_30_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616035>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616031>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616034>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616028>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616037>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616033>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616029>,seconds
+<mobilenet_v1_006_30_frozen>,<0.616030>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088272>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088257>,seconds
+Starting benchmark.<mobilenet_v1_012_60_frozen>,<1.088272>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088257>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088202>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088230>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088235>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088261>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088270>,seconds
+<mobilenet_v1_012_60_frozen>,<1.088222>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_48_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539792>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539805>,seconds
+<mobilenet_v1_004_48_frozen>,<0.539786>,seconds
+<mobilenet_v1_004_48_fr[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+Starting benchmark.<mobilenet_v1_008_60_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737806>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737804>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737790>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737794>,seconds
+<mobilenet_v1_008_60_frozen>,<0.737804>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_48_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737805>,seconds
+Starting benchmark.<mobilenet_v1_008_48_frozen>,<0.737827>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737811>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737805>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737810>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737798>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737796>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737819>,seconds
+<mobilenet_v1_008_48_frozen>,<0.737795>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896517>,seconds
+Starting benchmark.<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896517>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896467>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896488>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896461>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896461>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896462>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896478>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896466>,seconds
+<mobilenet_v1_010_48_frozen>,<0.896473>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_012_96_frozen>,<1.088274>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088256>,seconds
+Starting benchmark.<mobilenet_v1_012_96_frozen>,<1.088274>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088256>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088247>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088267>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088237>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088293>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088243>,seconds
+<mobilenet_v1_012_96_frozen>,<1.088210>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295383>,seconds
+Starting benchmark.<mobilenet_v1_014_48_frozen>,<1.295383>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295394>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295299>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295275>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295292>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295265>,seconds
+<mobilenet_v1_014_48_frozen>,<1.295274>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737830>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737806>,seconds
+Starting benchmark.<mobilenet_v1_008_30_frozen>,<0.737830>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737812>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737806>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737808>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737799>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737791>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737798>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737813>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737816>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737803>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737807>,seconds
+<mobilenet_v1_008_30_frozen>,<0.737814>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616045>,seconds
+Starting benchmark.<mobilenet_v1_006_48_frozen>,<0.616055>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616025>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616040>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616045>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616042>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616049>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616043>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616039>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616042>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616031>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616038>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616052>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616046>,seconds
+<mobilenet_v1_006_48_frozen>,<0.616034>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295372>,seconds
+Starting benchmark.<mobilenet_v1_014_60_frozen>,<1.295372>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295366>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295244>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295282>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295315>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295294>,seconds
+<mobilenet_v1_014_60_frozen>,<1.295305>,seconds
+[mbed] Working path "/home/reddilab/workspace/tinyml/compile" (program)
+[mbed] Detecting connected targets/boards to your system...
+[mbed] Opening serial terminal to "NUCLEO_F767ZI"
+--- Terminal on /dev/ttyACM0 - 9600,8,N,1 ---
+Starting benchmark.<mobilenet_v1_004_60_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539793>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539788>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539796>,seconds
+<mobilenet_v1_004_60_frozen>,<0.539786>,seconds
+Starting benchmark.<mobilenet_v1_004_60_frozen>,<0.539804>,seconds
+<mobilenet_v1_004_60_
