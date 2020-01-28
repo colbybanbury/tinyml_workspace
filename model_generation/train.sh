@@ -53,7 +53,7 @@ python3 $TF_SOURCE/models/research/slim/train_image_classifier.py \
 --num_epochs_per_decay=2.5 \
 --moving_average_decay=0.9999 \
 --batch_size=96 \
---max_number_of_steps=3000
+--max_number_of_steps=10000
 done
 
 

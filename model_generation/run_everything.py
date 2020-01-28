@@ -10,6 +10,7 @@ def get_most_recent_checkpoint(model_folder):
     latest_checkpoint = sorted(checkpoints, key=lambda x: -int(x.split('-')[-1]))[0]
     return latest_checkpoint
 
+TF_SOURCE = Path.home() / 'packages' / 'tensorflow'
 
 # Step 1: Training
 # This script assumes that you have trained everything already
@@ -35,7 +36,7 @@ for model_folder in model_folders:
     if Path(frozen_protobuf_name).is_file():
         continue
     checkpoint = model_folder / get_most_recent_checkpoint(model_folder)
-    command = f"./export.sh {model_name} {checkpoint} {model_type}"
+    command = f"PYTHONPATH={TF_SOURCE}; ./export.sh {model_name} {checkpoint} {model_type}"
     print(command)
     call(command, shell=True)
 
