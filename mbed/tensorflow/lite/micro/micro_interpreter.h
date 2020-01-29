@@ -44,7 +44,9 @@ class MicroInterpreter {
   TfLiteStatus AllocateTensors();
 
   TfLiteStatus Invoke();
+  #ifdef TINYML_DEBUG
   TfLiteStatus InvokeDebug();
+  #endif
 
   size_t tensors_size() const { return context_.tensors_size; }
   TfLiteTensor* tensor(size_t tensor_index);

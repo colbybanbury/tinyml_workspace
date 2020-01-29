@@ -22,6 +22,11 @@ limitations under the License.
 
 #include <iostream>
 
+#ifdef TINYML_DEBUG
+#include "mbed.h"
+Timer layer_timer;
+#endif
+
 
 namespace tflite {
 namespace {
@@ -212,6 +217,8 @@ TfLiteStatus MicroInterpreter::Invoke() {
   return kTfLiteOk;
 }
 
+
+#ifdef TINYML_DEBUG
 TfLiteStatus MicroInterpreter::InvokeDebug() {
   if (initialization_status_ != kTfLiteOk) {
     error_reporter_->Report("Invoke() called after initialization failed\n");
@@ -263,8 +270,10 @@ TfLiteStatus MicroInterpreter::InvokeDebug() {
     auto* node = &(node_and_registrations_[i].node);
     auto* registration = node_and_registrations_[i].registration;
 
+
     if (registration->invoke) {
-      std::cout << "Operation Fired" << std::endl;
+      layer_timer.reset();
+      layer_timer.start();
       TfLiteStatus invoke_status = registration->invoke(&context_, node);
       if (invoke_status != kTfLiteOk) {
         error_reporter_->Report(
@@ -272,11 +281,15 @@ TfLiteStatus MicroInterpreter::InvokeDebug() {
             OpNameFromRegistration(registration), i, invoke_status);
         return kTfLiteError;
       }
-      std::cout << "Operation Finished" << std::endl;
+      layer_timer.stop();
+      std::cout << registration->builtin_code << "\t"
+        << registration->version << "\t"
+        << layer_timer.read() << std::endl;
     }
   }
   return kTfLiteOk;
 }
+#endif
 
 
 TfLiteTensor* MicroInterpreter::input(size_t index) {
