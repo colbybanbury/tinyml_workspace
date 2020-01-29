@@ -32,13 +32,15 @@ def get_avaiable_programs():
             model_names.append(var)
     return model_names
 
-def compile_program(model_name):
+def compile_program(model_name, debug=True):
     """Actually calls mbed to compile programs, then copy out the binary
     The binary will be in the format:
         ./BUILD/<DEVICE_NAME>/GCC_ARM/mbed.bin
     """
     command = "mbed compile -t GCC_ARM -DTF_LITE_STATIC_MEMORY"
     command += f" -DTINYML_MODEL={model_name}"
+    if debug:
+        command += " -DTINYML_DEBUG"
     print(command)
     p = check_output(command, shell=True, cwd=PROG_PATH)
 

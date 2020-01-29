@@ -20,6 +20,9 @@ limitations under the License.
 #include "tensorflow/lite/micro/compatibility.h"
 #include "tensorflow/lite/micro/micro_optional_debug_tools.h"
 
+#include <iostream>
+
+
 namespace tflite {
 namespace {
 
