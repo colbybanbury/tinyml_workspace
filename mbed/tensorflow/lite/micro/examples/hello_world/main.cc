@@ -32,12 +32,14 @@ int main(int argc, char* argv[]) {
   debug("Starting benchmark.");
   setup();
   while (true) {
-    t.reset();
-    t.start();
+    //t.reset();
+    // t.start();
+    debug("START_BENCHMARKING %s\n", STRING_VAR(TINYML_MODEL));
     for (int i = 0; i < 1; i++) {
       loop();
     }
-    t.stop();
-    debug("<%s>,<%f>,seconds\n", STRING_VAR(TINYML_MODEL), t.read());
+    // t.stop();
+    // debug("<%s>,<%f>,seconds\n", STRING_VAR(TINYML_MODEL), t.read());
+    debug("END_BENCHMARKING %s\n", STRING_VAR(TINYML_MODEL));
   }
 }
