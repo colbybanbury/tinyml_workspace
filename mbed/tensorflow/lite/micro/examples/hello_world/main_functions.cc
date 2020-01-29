@@ -99,7 +99,11 @@ void loop() {
   // input->data.f[0] = x_val;
 
   // Run inference, and report any error
-  TfLiteStatus invoke_status = interpreter->Invoke();
+  #ifdef TINYML_DEBUG
+    TfLiteStatus invoke_status = interpreter->InvokeDebug();
+  #else
+    TfLiteStatus invoke_status = interpreter->Invoke();
+  #endif
   if (invoke_status != kTfLiteOk) {
     error_reporter->Report("Invoke failed\n");
     return;
