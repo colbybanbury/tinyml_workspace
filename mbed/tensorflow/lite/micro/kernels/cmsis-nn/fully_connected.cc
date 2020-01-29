@@ -15,6 +15,7 @@ limitations under the License.
 
 #include "tensorflow/lite/kernels/internal/reference/fully_connected.h"
 
+#include "arm_nnfunctions.h"
 #include "tensorflow/lite/c/builtin_op_data.h"
 #include "tensorflow/lite/c/common.h"
 #include "tensorflow/lite/kernels/internal/common.h"
@@ -22,6 +23,7 @@ limitations under the License.
 #include "tensorflow/lite/kernels/internal/reference/integer_ops/fully_connected.h"
 #include "tensorflow/lite/kernels/internal/tensor_ctypes.h"
 #include "tensorflow/lite/kernels/kernel_util.h"
+#include "tensorflow/lite/micro/kernels/cmsis-nn/scratch_buffer.h"
 
 namespace tflite {
 namespace ops {
@@ -77,6 +79,8 @@ void* Init(TfLiteContext* context, const char* buffer, size_t length) {
 void Free(TfLiteContext* context, void* buffer) {}
 
 TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
+  // todo: call AllocateTemporaryTensor() instead of using
+  // get_cmsis_scratch_buffer()
   return kTfLiteOk;
 }
 
@@ -85,6 +89,31 @@ TfLiteStatus EvalQuantizedInt8(TfLiteContext* context, TfLiteNode* node,
                                const TfLiteTensor* input,
                                const TfLiteTensor* filter,
                                const TfLiteTensor* bias, TfLiteTensor* output) {
+  RuntimeShape output_shape = GetTensorShape(output);
+  const int batches = output_shape.Dims(0);
+  const int output_depth = output_shape.Dims(1);
+  RuntimeShape filter_shape = GetTensorShape(filter);
+  const int filter_dim_count = filter_shape.DimensionsCount();
+  const int accum_depth = filter_shape.Dims(filter_dim_count - 1);
+
+#if defined(__ARM_FEATURE_DSP)
+  const int32_t buf_size = arm_fully_connected_s8_get_buffer_size(accum_depth);
+  int16_t* buf = nullptr;
+  TF_LITE_ENSURE_OK(context, get_cmsis_scratch_buffer(context, &buf, buf_size));
+  TF_LITE_ENSURE_EQ(
+      context,
+      arm_fully_connected_s8(
+          GetTensorData<int8_t>(input), GetTensorData<int8_t>(filter),
+          accum_depth, output_depth, batches, -input->params.zero_point,
+          -filter->params.zero_point, data->output_multiplier,
+          -data->output_shift, output->params.zero_point,
+          GetTensorData<int32_t>(bias), GetTensorData<int8_t>(output),
+          data->output_activation_min, data->output_activation_max, buf),
+      ARM_MATH_SUCCESS);
+#else
+#pragma message( \
+    "CMSIS-NN optimization for fully_connected not available for this target. Using reference kernel.")
+
   FullyConnectedParams op_params;
   op_params.input_offset = -input->params.zero_point;
   op_params.weights_offset = -filter->params.zero_point;
@@ -100,6 +129,7 @@ TfLiteStatus EvalQuantizedInt8(TfLiteContext* context, TfLiteNode* node,
       GetTensorShape(filter), GetTensorData<int8_t>(filter),
       GetTensorShape(bias), GetTensorData<int32_t>(bias),
       GetTensorShape(output), GetTensorData<int8_t>(output));
+#endif
   return kTfLiteOk;
 }
 
@@ -201,11 +231,9 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
 }  // namespace fully_connected
 
 TfLiteRegistration* Register_FULLY_CONNECTED() {
-  static TfLiteRegistration r = {};
-  r.init = fully_connected::Init;
-  r.free = fully_connected::Free;
-  r.prepare = fully_connected::Prepare;
-  r.invoke = fully_connected::Eval;
+  static TfLiteRegistration r = {fully_connected::Init, fully_connected::Free,
+                                 fully_connected::Prepare,
+                                 fully_connected::Eval};
   return &r;
 }
 

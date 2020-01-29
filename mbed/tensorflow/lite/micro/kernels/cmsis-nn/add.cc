@@ -15,8 +15,8 @@ limitations under the License.
 
 #include "tensorflow/lite/kernels/internal/reference/add.h"
 
+#include "arm_nnfunctions.h"
 #include "tensorflow/lite/c/builtin_op_data.h"
-#include "tensorflow/lite/c/common.h"
 #include "tensorflow/lite/kernels/internal/quantization_util.h"
 #include "tensorflow/lite/kernels/internal/reference/integer_ops/add.h"
 #include "tensorflow/lite/kernels/internal/reference/process_broadcast_shapes.h"
@@ -54,16 +54,6 @@ struct OpData {
   int32 output_offset;
 };
 
-void* Init(TfLiteContext* context, const char* buffer, size_t length) {
-  return nullptr;
-}
-
-void Free(TfLiteContext* context, void* buffer) {}
-
-TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
-  return kTfLiteOk;
-}
-
 TfLiteStatus CalculateOpData(TfLiteContext* context, TfLiteAddParams* params,
                              const TfLiteTensor* input1,
                              const TfLiteTensor* input2, TfLiteTensor* output,
@@ -77,15 +67,14 @@ TfLiteStatus CalculateOpData(TfLiteContext* context, TfLiteAddParams* params,
     data->output_offset = output->params.zero_point;
     data->left_shift = 20;
     const double twice_max_input_scale =
-        2 * static_cast<double>(
-                std::max(input1->params.scale, input2->params.scale));
+        2 * std::max(input1->params.scale, input2->params.scale);
     const double real_input1_multiplier =
-        static_cast<double>(input1->params.scale) / twice_max_input_scale;
+        input1->params.scale / twice_max_input_scale;
     const double real_input2_multiplier =
-        static_cast<double>(input2->params.scale) / twice_max_input_scale;
+        input2->params.scale / twice_max_input_scale;
     const double real_output_multiplier =
         twice_max_input_scale /
-        ((1 << data->left_shift) * static_cast<double>(output->params.scale));
+        ((1 << data->left_shift) * output->params.scale);
 
     QuantizeMultiplierSmallerThanOneExp(
         real_input1_multiplier, &data->input1_multiplier, &data->input1_shift);
@@ -155,7 +144,17 @@ TfLiteStatus EvalAddQuantized(TfLiteContext* context, TfLiteNode* node,
       if (need_broadcast) {
         TF_LITE_ADD(reference_integer_ops, BroadcastAdd4DSlow, int8_t);
       } else {
-        TF_LITE_ADD(reference_integer_ops, Add, int8_t);
+        arm_elementwise_add_s8(
+            GetTensorData<int8_t>(input1), GetTensorData<int8_t>(input2),
+            op_params.input1_offset, op_params.input1_multiplier,
+            op_params.input1_shift, op_params.input2_offset,
+            op_params.input2_multiplier, op_params.input2_shift,
+            op_params.left_shift, GetTensorData<int8_t>(output),
+            op_params.output_offset, op_params.output_multiplier,
+            op_params.output_shift, op_params.quantized_activation_min,
+            op_params.quantized_activation_max,
+            MatchingElementsSize(GetTensorShape(input1), GetTensorShape(input2),
+                                 GetTensorShape(output)));
       }
     } else {
       if (need_broadcast) {
@@ -198,11 +197,8 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
 }  // namespace add
 
 TfLiteRegistration* Register_ADD() {
-  static TfLiteRegistration r = {};
-  r.init = add::Init;
-  r.free = add::Free;
-  r.prepare = add::Prepare;
-  r.invoke = add::Eval;
+  static TfLiteRegistration r = {nullptr /* Init */, nullptr /* Free */,
+                                 nullptr /* Prepare */, add::Eval};
   return &r;
 }
 

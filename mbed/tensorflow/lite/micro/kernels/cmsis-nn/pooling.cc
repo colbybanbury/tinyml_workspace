@@ -14,6 +14,9 @@ limitations under the License.
 ==============================================================================*/
 #include "tensorflow/lite/kernels/internal/reference/pooling.h"
 
+// These are headers from the ARM CMSIS-NN library.
+#include "arm_nnfunctions.h"  // NOLINT
+#include "scratch_buffer.h"   // NOLINT
 #include "tensorflow/lite/c/builtin_op_data.h"
 #include "tensorflow/lite/kernels/internal/reference/integer_ops/pooling.h"
 #include "tensorflow/lite/kernels/internal/tensor_ctypes.h"
@@ -95,12 +98,52 @@ void AverageEvalUint8(TfLiteContext* context, const TfLiteNode* node,
       GetTensorShape(output), GetTensorData<uint8_t>(output));
 }
 
-void AverageEvalInt8(TfLiteContext* context, const TfLiteNode* node,
-                     const TfLitePoolParams* params, const OpData* data,
-                     const TfLiteTensor* input, TfLiteTensor* output) {
+TfLiteStatus AverageEvalInt8(TfLiteContext* context, const TfLiteNode* node,
+                             const TfLitePoolParams* params, const OpData* data,
+                             TfLiteTensor* input, TfLiteTensor* output) {
   int32_t activation_min, activation_max;
   (void)CalculateActivationRangeQuantized(context, params->activation, output,
                                           &activation_min, &activation_max);
+
+  TFLITE_DCHECK_LE(activation_min, activation_max);
+
+#if defined(__ARM_FEATURE_DSP)
+  RuntimeShape input_shape = GetTensorShape(input);
+  TFLITE_DCHECK_EQ(input_shape.DimensionsCount(), 4);
+
+  RuntimeShape output_shape = GetTensorShape(output);
+  TFLITE_DCHECK_EQ(output_shape.DimensionsCount(), 4);
+
+  const int depth = MatchingDim(input_shape, 3, output_shape, 3);
+  const int input_height = input_shape.Dims(1);
+  const int input_width = input_shape.Dims(2);
+  const int output_height = output_shape.Dims(1);
+  const int output_width = output_shape.Dims(2);
+  const int stride_height = params->stride_height;
+  const int stride_width = params->stride_width;
+
+  const int filter_height = params->filter_height;
+  const int filter_width = params->filter_width;
+  const int padding_height = data->padding.height;
+  const int padding_width = data->padding.width;
+
+  int16_t* scratch_buffer = nullptr;
+  int32_t buffer_size = arm_avgpool_s8_get_buffer_size(output_width, depth);
+
+  TF_LITE_ENSURE_OK(
+      context, get_cmsis_scratch_buffer(context, &scratch_buffer, buffer_size));
+
+  TF_LITE_ENSURE_EQ(
+      context,
+      arm_avgpool_s8(input_height, input_width, output_height, output_width,
+                     stride_height, stride_width, filter_height, filter_width,
+                     padding_height, padding_width, activation_min,
+                     activation_max, depth, GetTensorData<int8_t>(input),
+                     scratch_buffer, GetTensorData<int8_t>(output)),
+      ARM_MATH_SUCCESS);
+#else
+#pragma message( \
+    "CMSIS-NN optimization for depthwise_conv not available for this target. Using reference kernel.")
 
   PoolParams op_params;
   op_params.stride_height = params->stride_height;
@@ -114,6 +157,9 @@ void AverageEvalInt8(TfLiteContext* context, const TfLiteNode* node,
   reference_integer_ops::AveragePool(
       op_params, GetTensorShape(input), GetTensorData<int8_t>(input),
       GetTensorShape(output), GetTensorData<int8_t>(output));
+
+#endif
+  return kTfLiteOk;
 }
 
 void MaxEvalFloat(TfLiteContext* context, TfLiteNode* node,
@@ -174,7 +220,9 @@ TfLiteStatus AverageEval(TfLiteContext* context, TfLiteNode* node) {
   auto* params = reinterpret_cast<TfLitePoolParams*>(node->builtin_data);
   OpData data;
 
-  const TfLiteTensor* input = GetInput(context, node, kInputTensor);
+  // Todo: make 'input' const once CMSIS-reuse is fixed
+  TfLiteTensor* input = &context->tensors[flatbuffers::EndianScalar(
+      node->inputs->data[kInputTensor])];
   TfLiteTensor* output = GetOutput(context, node, kOutputTensor);
 
   TF_LITE_ENSURE_STATUS(CalculateOpData(context, params, input, output, &data));
@@ -188,7 +236,7 @@ TfLiteStatus AverageEval(TfLiteContext* context, TfLiteNode* node) {
       AverageEvalUint8(context, node, params, &data, input, output);
       break;
     case kTfLiteInt8:
-      AverageEvalInt8(context, node, params, &data, input, output);
+      return AverageEvalInt8(context, node, params, &data, input, output);
       break;
     default:
       context->ReportError(context, "Input type %s is not currently supported",
@@ -225,20 +273,18 @@ TfLiteStatus MaxEval(TfLiteContext* context, TfLiteNode* node) {
 }  // namespace pooling
 
 TfLiteRegistration* Register_AVERAGE_POOL_2D() {
-  static TfLiteRegistration r = {};
-  r.init = pooling::Init;
-  r.free = pooling::Free;
-  r.prepare = pooling::Prepare;
-  r.invoke = pooling::AverageEval;
+  static TfLiteRegistration r = {
+      pooling::Init,
+      pooling::Free,
+      pooling::Prepare,
+      pooling::AverageEval,
+  };
   return &r;
 }
 
 TfLiteRegistration* Register_MAX_POOL_2D() {
-  static TfLiteRegistration r = {};
-  r.init = pooling::Init;
-  r.free = pooling::Free;
-  r.prepare = pooling::Prepare;
-  r.invoke = pooling::MaxEval;
+  static TfLiteRegistration r = {pooling::Init, pooling::Free, pooling::Prepare,
+                                 pooling::MaxEval};
   return &r;
 }
 

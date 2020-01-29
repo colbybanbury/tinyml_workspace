@@ -15,7 +15,7 @@ limitations under the License.
 
 #include "tensorflow/lite/kernels/internal/reference/mul.h"
 
-#include "tensorflow/lite/c/common.h"
+#include "arm_nnfunctions.h"
 #include "tensorflow/lite/kernels/internal/quantization_util.h"
 #include "tensorflow/lite/kernels/internal/reference/integer_ops/mul.h"
 #include "tensorflow/lite/kernels/internal/reference/process_broadcast_shapes.h"
@@ -54,18 +54,11 @@ TfLiteStatus CalculateOpData(TfLiteContext* context, TfLiteNode* node,
       context, params->activation, output, &data->output_activation_min,
       &data->output_activation_max));
 
-  if (output->type == kTfLiteUInt8 || output->type == kTfLiteInt8) {
-    double real_multiplier = static_cast<double>(input1->params.scale) *
-                             static_cast<double>(input2->params.scale) /
-                             static_cast<double>(output->params.scale);
-    QuantizeMultiplier(real_multiplier, &data->output_multiplier,
-                       &data->output_shift);
-  }
+  double real_multiplier =
+      input1->params.scale * input2->params.scale / output->params.scale;
+  QuantizeMultiplier(real_multiplier, &data->output_multiplier,
+                     &data->output_shift);
 
-  return kTfLiteOk;
-}
-
-TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
   return kTfLiteOk;
 }
 
@@ -95,7 +88,15 @@ void EvalQuantized(TfLiteContext* context, TfLiteNode* node,
       if (need_broadcast) {
         TF_LITE_MUL(reference_integer_ops, BroadcastMul4DSlow, int8_t);
       } else {
-        TF_LITE_MUL(reference_integer_ops, Mul, int8_t);
+        arm_elementwise_mul_s8(
+            GetTensorData<int8_t>(input1), GetTensorData<int8_t>(input2),
+            op_params.input1_offset, op_params.input2_offset,
+            GetTensorData<int8_t>(output), op_params.output_offset,
+            op_params.output_multiplier, op_params.output_shift,
+            op_params.quantized_activation_min,
+            op_params.quantized_activation_max,
+            MatchingElementsSize(GetTensorShape(input1), GetTensorShape(input2),
+                                 GetTensorShape(output)));
       }
     } else if (output->type == kTfLiteUInt8) {
       if (need_broadcast) {
@@ -153,8 +154,8 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
       EvalFloat(context, node, params, &data, input1, input2, output);
       break;
     default:
-      context->ReportError(context, "Type %d not currently supported.",
-                           input1->type);
+      context->ReportError(context, "Type %s (%d) not supported.",
+                           TfLiteTypeGetName(input1->type), input1->type);
       return kTfLiteError;
   }
 
@@ -163,9 +164,8 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
 }  // namespace mul
 
 TfLiteRegistration* Register_MUL() {
-  static TfLiteRegistration r = {};
-  r.prepare = mul::Prepare;
-  r.invoke = mul::Eval;
+  static TfLiteRegistration r = {nullptr /* Init */, nullptr /* Free */,
+                                 nullptr /* Prepare */, mul::Eval};
   return &r;
 }
 
