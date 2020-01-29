@@ -41,6 +41,7 @@ def compile_program(model_name, debug=True):
     command += f" -DTINYML_MODEL={model_name}"
     if debug:
         command += " -DTINYML_DEBUG"
+    # command += " -DARM_MATH_LOOPUNROLL"
     print(command)
     p = check_output(command, shell=True, cwd=PROG_PATH)
 

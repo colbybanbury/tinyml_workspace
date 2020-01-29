@@ -22,27 +22,33 @@ def chunk_to_dataframe(chunk):
 
     data = []
     for idx, layer_info in enumerate(layer_times):
-        items = layer_info.split('\t')
-        opcode = int(items[0])
-        version = int(items[1])
-        time = float(items[2])
-        data.append((model_name, idx, opcode, version, time))
+        try:
+            items = layer_info.split('\t')
+            opcode = int(items[0])
+            version = int(items[1])
+            time = float(items[2])
+            data.append((model_name, idx, opcode, version, time))
+        except ValueError:
+            pass
     df = pd.DataFrame(data)
-    df.columns = ['model_name', 'layer_num', 'opcode', 'opcode_version', 'time']
+    if len(data) > 0:
+        df.columns = ['model_name', 'layer_num', 'opcode', 'opcode_version', 'time']
     return df
- 
 
-text = log_path.read_text()
-record_dfs = []
-for chunk in text.split("START_BENCHMARKING"):
-    if 'END_BENCHMARKING' not in chunk:
-        continue
-    df = chunk_to_dataframe(chunk)
-    record_dfs.append(df)
 
-result_df = pd.concat(record_dfs)
-print(result_df)
-print(result_df.info())
-result_df['layer_name'] = result_df.apply(
-    lambda row: opcode_to_name(row['opcode']) + '_' + str(row['layer_num']), axis=1)
-print(result_df)
+def dataframe_from_log(log_file):
+    log_file = Path(log_file)
+    text = log_file.read_text()
+    record_dfs = []
+    for chunk in text.split("START_BENCHMARKING"):
+        if 'END_BENCHMARKING' not in chunk:
+            continue
+        df = chunk_to_dataframe(chunk)
+        if len(df) > 0:
+            record_dfs.append(df)
+
+    result_df = pd.concat(record_dfs)
+    result_df['layer_name'] = result_df.apply(
+        lambda row: opcode_to_name(row['opcode']) + '_' + str(row['layer_num']), axis=1)
+    return result_df
+
